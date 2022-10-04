@@ -1,0 +1,65 @@
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #1f2832;
+    z-index: 10;
+}
+
+.header header{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header header .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #66fcf1;
+}
+
+.header .cartIcon{
+    position: relative;
+}
+
+.cartIcon svg{
+    color: #66fcf1;
+}
+
+.header .cartIcon span{
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #ff0000;
+    color: #66fcf1;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.login_signup{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login_signup a{
+    padding: 5px 10px;
+    border: 2px solid #66fcf1;
+    border-radius: 10px;
+    color: #66fcf1;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+    .header header .title{
+        font-size: 19px;
+    }
+
+    .login_signup a{
+        padding: 0 5px;
+    }
+}
